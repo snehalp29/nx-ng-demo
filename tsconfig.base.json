@@ -15,7 +15,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@angular-material/shared/ui-material": [
+        "libs/shared/ui-material/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
