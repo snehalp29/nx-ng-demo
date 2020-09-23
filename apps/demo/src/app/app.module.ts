@@ -14,7 +14,7 @@ import { RouterModule, Route } from '@angular/router';
     SharedUiMaterialModule,
     RouterModule.forRoot([
       {
-        path: 'demo-feature-contact-manager',
+        path: 'contactManager',
         loadChildren: () =>
           import('@angular-material/demo/feature-contact-manager').then(
             (module) => module.DemoFeatureContactManagerModule
