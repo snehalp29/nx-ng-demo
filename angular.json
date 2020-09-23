@@ -151,6 +151,39 @@
           "style": "scss"
         }
       }
+    },
+    "demo-feature-contact-manager": {
+      "projectType": "library",
+      "root": "libs/demo/feature-contact-manager",
+      "sourceRoot": "libs/demo/feature-contact-manager/src",
+      "prefix": "angular-material",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/demo/feature-contact-manager/tsconfig.lib.json",
+              "libs/demo/feature-contact-manager/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/demo/feature-contact-manager/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/demo/feature-contact-manager/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {

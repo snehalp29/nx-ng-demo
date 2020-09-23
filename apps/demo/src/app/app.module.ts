@@ -9,7 +9,19 @@ import { RouterModule, Route } from '@angular/router';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, SharedUiMaterialModule, RouterModule.forRoot([])],
+  imports: [
+    BrowserModule,
+    SharedUiMaterialModule,
+    RouterModule.forRoot([
+      {
+        path: 'demo-feature-contact-manager',
+        loadChildren: () =>
+          import('@angular-material/demo/feature-contact-manager').then(
+            (module) => module.DemoFeatureContactManagerModule
+          ),
+      },
+    ]),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

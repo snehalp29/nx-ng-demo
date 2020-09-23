@@ -18,6 +18,9 @@
     "paths": {
       "@angular-material/shared/ui-material": [
         "libs/shared/ui-material/src/index.ts"
+      ],
+      "@angular-material/demo/feature-contact-manager": [
+        "libs/demo/feature-contact-manager/src/index.ts"
       ]
     }
   },
