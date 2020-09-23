@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { SharedUiMaterialModule } from '@angular-material/shared/ui-material';
 import { RouterModule, Route } from '@angular/router';
 
 // const Routes: Route[] = [{path:'',}];
@@ -11,7 +10,6 @@ import { RouterModule, Route } from '@angular/router';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    SharedUiMaterialModule,
     RouterModule.forRoot([
       {
         path: 'contactManager',
