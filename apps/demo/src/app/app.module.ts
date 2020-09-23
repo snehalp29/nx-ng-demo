@@ -20,6 +20,7 @@ import { RouterModule, Route } from '@angular/router';
             (module) => module.DemoFeatureContactManagerModule
           ),
       },
+      { path: '**', redirectTo: 'contactManager' },
     ]),
   ],
   providers: [],
